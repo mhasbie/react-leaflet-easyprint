@@ -52,7 +52,7 @@ Use react ref to call *printMap(size, filename)* function programmatically. Refe
 
 ...
 
-<button onClick={this.printControl.printMap('A4Portrait', 'MyFileName')} >Print Map</button>
+<button onClick={() => this.printControl.printMap('A4Portrait', 'MyFileName')} >Print Map</button>
 
 ...
 
