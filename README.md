@@ -22,7 +22,7 @@ npm install react-leaflet-easyprint --save
 
 ```javascript
 import { Map, TileLayer } from 'react-leaflet';
-import PrintControl from 'react-leaflet-measure';
+import PrintControl from 'react-leaflet-easyprint';
 		
 <Map center={[101.483459, 2.938926]} zoom={12}>
   <TileLayer
