@@ -1,7 +1,7 @@
 /* eslint-disable */
 module.exports = {
   output: {
-    library: 'ReactLeaflet',
+    library: 'ReactLeafletEasyprint',
     libraryTarget: 'umd'
   },
   externals: [
@@ -25,7 +25,8 @@ module.exports = {
       'react-leaflet': {
         amd: 'react-leaflet',
         commonjs: 'react-leaflet',
-        commonjs2: 'react-leaflet'
+        commonjs2: 'react-leaflet',
+		root: 'ReactLeaflet'
       }
     },
     {

@@ -6,6 +6,8 @@ A simple [leaflet](http://www.leafletjs.com) plugin which adds an icon to print 
 
 [Demo](http://rowanwins.github.com/leaflet-easyPrint/).
 
+[Demo JSFiddle](https://jsfiddle.net/m_hasbie/87h9cnjd/)
+
 *Tested with Leaflet 1.3.1 and React-Leaflet 1.8.0*
 
 ## Installation
