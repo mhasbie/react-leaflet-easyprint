@@ -1,6 +1,6 @@
 {
   "name": "react-leaflet-easyprint",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React wrapper of leaflet-easyPrint. A simple leaflet plugin which adds an icon to print or export a map.",
   "main": "dist/react-leaflet-easyprint.min.js",
   "scripts": {
