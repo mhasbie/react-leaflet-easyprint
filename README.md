@@ -1,5 +1,13 @@
 # react-leaflet-easyprint
 
+[![travis build](https://img.shields.io/travis/mhasbie/react-leaflet-easyprint.svg?style=plastic)](https://travis-ci.org/mhasbie/react-leaflet-easyprint)
+[![version](https://img.shields.io/npm/v/react-leaflet-easyprint.svg?style=plastic)](http://npm.im/react-leaflet-easyprint)
+[![MIT License](https://img.shields.io/npm/l/react-leaflet-easyprint.svg?style=plastic)](http://opensource.org/licenses/MIT)
+[![dependencies](https://img.shields.io/david/mhasbie/react-leaflet-easyprint.svg?style=plastic)](https://david-dm.org/mhasbie/react-leaflet-easyprint)
+[![peer dependencies](https://img.shields.io/david/peer/mhasbie/react-leaflet-easyprint.svg?style=plastic)](https://david-dm.org/mhasbie/react-leaflet-easyprint?type=peer)
+[![downloads](https://img.shields.io/npm/dt/react-leaflet-easyprint.svg?style=plastic)](http://npm-stat.com/charts.html?package=react-leaflet-easyprint&from=2018-01-01)
+[![issues](https://img.shields.io/github/issues/mhasbie/react-leaflet-easyprint.svg?style=plastic)](https://github.com/mhasbie/react-leaflet-easyprint/issues)
+
 React wrapper of [leaflet-easyPrint](https://github.com/rowanwins/leaflet-easyPrint) for [react-leaflet](https://github.com/PaulLeCam/react-leaflet).
 
 A simple [leaflet](http://www.leafletjs.com) plugin which adds an icon to print or export a map.
