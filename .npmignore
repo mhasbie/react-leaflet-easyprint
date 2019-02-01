@@ -1,0 +1,15 @@
+#Directories
+node_modules/
+lib/
+src/
+example/
+coverage/
+__tests__/
+
+#Files
+.babelrc
+.npmignore
+.gitignore
+.travis.yml
+.vscode
+webpack.config.js

@@ -8,8 +8,7 @@ export default class PrintControl extends MapControl {
 	}
 
 	componentDidMount() {
-		const { map } = this.context;
-		this.leafletElement.addTo(map);
+		super.componentDidMount();
 	}
 
 	printMap(size, filename) {

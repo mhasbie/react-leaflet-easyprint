@@ -1,0 +1,73 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>react-leaflet-easyprint Example for react-leaflet v2</title>
+		<meta name="description" content="https://github.com/mhasbie/react-leaflet-easyprint">
+
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css" rel="stylesheet">
+		<style>
+			.leaflet-container {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container"></div>
+  
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.23.1/babel.js"></script>
+		<script src="https://unpkg.com/react@16.5.2/umd/react.production.min.js"></script>
+		<script src="https://unpkg.com/react-dom@16.5.2/umd/react-dom.production.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet-src.js"></script>
+		<script src="https://unpkg.com/react-leaflet@2.2.0/dist/react-leaflet.js"></script>
+		<script src="../dist/react-leaflet-easyprint.min.js"></script>
+		<script type="text/babel">
+			const { Map, TileLayer, withLeaflet } = ReactLeaflet;
+			const PrintControlDefault = ReactLeafletEasyprint;
+			const PrintControl = withLeaflet(PrintControlDefault);
+
+			class SimpleExample extends React.Component {
+				constructor() {
+					super();
+					this.state = {
+						center: [2.935403, 101.448205],
+						zoom: 10,
+						minZoom: 1,
+						maxZoom: 22,
+					}
+				}
+
+				render() {
+					const printOptions = {
+						position: 'topleft',
+						sizeModes: ['Current', 'A4Portrait', 'A4Landscape'],
+						hideControlContainer: false
+					};
+					const downloadOptions = {
+						position: 'topleft',
+						sizeModes: ['Current', 'A4Portrait', 'A4Landscape'],
+						title: 'Export as PNG',
+						hideControlContainer: false,
+						exportOnly: true
+					};
+					return (
+						<Map {...this.state}>
+							<TileLayer
+								attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+								url='http://{s}.tile.osm.org/{z}/{x}/{y}.png'
+							/>
+							<PrintControl ref={(ref) => { this.printControl = ref; }} {...printOptions} />
+							<PrintControl {...downloadOptions} />
+						</Map>
+					);
+				}
+			}
+
+			ReactDOM.render(<SimpleExample />, document.getElementById('container'))
+		</script>
+	</body>
+</html>
